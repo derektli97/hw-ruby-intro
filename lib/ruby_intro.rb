@@ -47,6 +47,7 @@ def sum_to_n? arr, n
   return false
 end
 
+#----------------------------
 # Part 2
 
 def hello(name)
@@ -56,18 +57,22 @@ def hello(name)
 
 end
 
+#----------------------------
+
 def starts_with_consonant? s
   # YOUR CODE HERE
-  s = s.downcase
-  if s.[0] == 'a' || s.[0] == 'e' s.[0] == 'i' s.[0] == 'o' s.[0] == 'u'
+  if s.[0] == 'a' || s.[0] == 'e' || s.[0] == 'i' || s.[0] == 'o' || s.[0] == 'u' || s.[0] == 'A' || s.[0] == 'E' || s.[0] == 'I' || s.[0] == 'O' || s.[0] == 'U' ||
     return false
   else 
     return true
   end
 end
 
+#----------------------------
+
 def binary_multiple_of_4? s
   # YOUR CODE HERE
+  #convert to binary
   binary = s.to_i(2)
   if binary > 4
     # if binary bigger than 4, and when divided by 4 == 0, it's divisible
@@ -76,13 +81,14 @@ def binary_multiple_of_4? s
       return true  
     end
   end
+  #nothing matters anymore
   return false
 end
 
+#----------------------------
 # Part 3
 
 class BookInStock
-
 # initialize
   def initalize(isbn, price)
       @isbn = isbn
@@ -92,11 +98,11 @@ class BookInStock
       raise ArgumentError
     end
   end
+
+#----------------------------
 #convert price to a string
   def price_as_a_string()
     puts format("$%.2f", @price)
   end
-  
-
 
 end
