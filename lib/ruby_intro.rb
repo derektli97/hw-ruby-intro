@@ -82,21 +82,21 @@ end
 # Part 3
 
 class BookInStock
-# YOUR CODE HERE
-  
-def initalize(isbn, price)
-    @isbn = isbn
-    @price = price
 
-  if @isbn.empty? || @price.zero?
-    raise ArgumentError
+# initialize
+  def initalize(isbn, price)
+      @isbn = isbn
+      @price = price
+
+    if @isbn.empty? || @price.zero?
+      raise ArgumentError
+    end
   end
-end
-
-def price_as_a_string()
+#convert price to a string
+  def price_as_a_string()
+    puts format("$%.2f", @price)
+  end
   
-
-
 
 
 end
