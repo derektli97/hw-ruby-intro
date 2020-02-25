@@ -61,7 +61,8 @@ end
 
 def starts_with_consonant? s
   # YOUR CODE HERE
-  if s.[0] == 'a' || s.[0] == 'e' || s.[0] == 'i' || s.[0] == 'o' || s.[0] == 'u' || s.[0] == 'A' || s.[0] == 'E' || s.[0] == 'I' || s.[0] == 'O' || s.[0] == 'U' ||
+
+  if s.(0) == 'a' || s.(0) == 'e' || s.(0) == 'i' || s.(0) == 'o' || s.(0) == 'u' || s.(0) == 'A' || s.(0) == 'E' || s.(0) == 'I' || s.(0) == 'O' || s.(0) == 'U'
     return false
   else 
     return true
